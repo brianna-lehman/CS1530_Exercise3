@@ -1,8 +1,9 @@
 public class Tri {
 	public int tri(int value) {
-		if (value = 1) {
+		if (value <= 0) {
 			return 1;
 		}
-		return value + tri(value-1)
+
+		return (value*(value+1))/2
 	}
 }
