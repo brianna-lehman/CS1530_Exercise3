@@ -11,6 +11,11 @@ dependencies {
 	testCompile 'junit:junit:4.12'
 }
 
+run {
+	systemProperties System.getProperties()
+	args System.getProperty("args").split()
+}
+
 task sequencehelp << {
 	println "Integer Sequence Project"
 	println "Given an integer n as an argument, displays Tri(n) and LC(n)."

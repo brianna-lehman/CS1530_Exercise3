@@ -6,7 +6,7 @@ public class Caterer {
 
 	public int tri(int value) {
 		if (value <= 0) {
-			return 1;
+			return 0;
 		}
 
 		return (value*(value+1))/2;
@@ -22,7 +22,7 @@ public class Caterer {
 		int triangles = caterer.tri(Integer.parseInt(args[1]));
 		int pieces = caterer.lazyCaterer(Integer.parseInt(args[0]));
 		System.out.println("Lazy("+args[0]+") = "+pieces);
-		System.out.println("Tri("+args[0]+") = "+triangles);
+		System.out.println("Tri("+args[1]+") = "+triangles);
 
 	}
 }
