@@ -6,19 +6,19 @@ public class TriTest{
 
 	@Test
 	public void testTriPosNumber() {
-		Tri t = new Tri();
+		Caterer t = new Caterer();
 		assertEqual(t(5), 15);
 	}
 
 	@Test
 	public void testTriNegNumber() {
-		Tri t = new Tri();
+		Caterer t = new Caterer();
 		assertEqual(t(-44), 0);
 	}
 
 	@Test
 	public void testTriReallyBigNumber() {
-		Tri t = new Tri();
+		Caterer t = new Caterer();
 		assertEqual(t(222222222), 24691358086419753);
 	}
 }
