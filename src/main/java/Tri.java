@@ -4,6 +4,6 @@ public class Tri {
 			return 1;
 		}
 
-		return (value*(value+1))/2
+		return (value*(value+1))/2;
 	}
 }
