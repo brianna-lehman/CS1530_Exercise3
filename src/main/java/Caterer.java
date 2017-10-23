@@ -1,16 +1,17 @@
-public class Caterer {	
+public class Caterer {
 
 	public int lazyCaterer(int n){
 		return (int) ((Math.pow(n,2)+n+2)/2);
 	}
 
-		public int tri(int value) {
-		if (value == 1) {
+	public int tri(int value) {
+		if (value <= 0) {
 			return 1;
 		}
-		return value + tri(value-1);
+
+		return (value*(value+1))/2;
 	}
-	
+
 	public static void main(String[] args){
 		if(args.length > 2){
 			System.out.println("Too many args");
